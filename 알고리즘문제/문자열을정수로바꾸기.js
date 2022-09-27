@@ -1,12 +1,10 @@
 function solution(s) {
-  let answer = parseInt(s);
-  return answer;
+  return parseInt(s);
 }
 
 console.log(solution("-1234"));
 
 /*
-
 제한 조건
  s의 길이는 1 이상 5이하입니다.
  s의 맨앞에는 부호(+, -)가 올 수 있습니다.
@@ -16,5 +14,4 @@ console.log(solution("-1234"));
 입출력 예
 예를들어 str이 "1234"이면 1234를 반환하고, "-1234"이면 -1234를 반환하면 됩니다.
 str은 부호(+,-)와 숫자로만 구성되어 있고, 잘못된 값이 입력되는 경우는 없습니다.
-
 */
