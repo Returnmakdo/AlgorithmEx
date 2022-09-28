@@ -1,7 +1,12 @@
 function solution(sizes) {
-  let answer = 0;
-
-  return answer;
+  const rotated = sizes.map(([w, h]) => (w < h ? [h, w] : [w, h])); // 삼항으로 w < h면 [h,w] 아니면 반대
+  let maxSize = [0, 0]; // 최대사이즈 배열 선언, 초기화
+  rotated.forEach(([w, h]) => {
+    // foreach로 배열 순회하면서 조건 비교
+    if (w > maxSize[0]) maxSize[0] = w;
+    if (h > maxSize[1]) maxSize[1] = h;
+  });
+  return maxSize[0] * maxSize[1];
 }
 
 /*
