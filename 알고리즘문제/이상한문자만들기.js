@@ -14,6 +14,7 @@ function solution(s) {
       answer = answer + " "; // 공백만들어주기
     }
   }
+  console.log(answer);
   return answer;
 }
 solution("try hello world");
